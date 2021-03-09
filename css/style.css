@@ -23,6 +23,7 @@ body {
     background: #f4f4f4;
     color: #999;
     padding: 30px;
+    overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -46,8 +47,41 @@ img {
     width: 100%;
 }
 
+/*
+    Utility Classes
+*/
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 1.5rem;
+    overflow: hidden;
+}
+
+.main-heading {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.l-headeing {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.sub-heading {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.lead-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Main Header */
 #main-header {
+    position: relative;
     height: 95vh;
     background-image: linear-gradient(to right bottom,
      rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)),
@@ -57,3 +91,26 @@ img {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
+#main-header .logo-link {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+#main-header .logo-link {
+    width: 70px; /* Height will be set automatically, cool! */
+}
+
+#main-header .l-headeing,
+#main-header .sub-heading {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 35px;
+    line-height: 1.7;
+}
+
+#main-header .sub-heading {
+    letter-spacing: 15px;
+    font-weight: 700;
+}

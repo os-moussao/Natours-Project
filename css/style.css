@@ -138,7 +138,7 @@ img {
 }
 
 /* Main Header */
-#main-header {
+.header {
     position: relative;
     height: 95vh;
     background-image: linear-gradient(to right bottom,
@@ -149,18 +149,15 @@ img {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
-#main-header .logo-link {
+.header .header__logo-link {
     position: absolute;
     top: 2rem;
     left: 2rem;
+    width: 70px;
 }
 
-#main-header .logo-link {
-    width: 70px; /* Height will be set automatically, cool! */
-}
-
-#main-header .l-heading,
-#main-header .sub-heading {
+.header .l-heading,
+.header .sub-heading {
     display: block;
     text-align: center;
     font-weight: 400;
@@ -168,19 +165,19 @@ img {
     line-height: 1.7;
 }
 
-#main-header .l-heading {
+.header .l-heading {
     backface-visibility: hidden;
     animation: move-left 2s;
 }
 
-#main-header .sub-heading {
+.header .sub-heading {
     letter-spacing: 15px;
     font-weight: 700;
     animation: move-right 2s;
     margin-bottom: 1.5rem;
 }
 
-#main-header .lead-box .btn {
+.header .lead-box .btn {
     animation: move-top 2s;
 }
 

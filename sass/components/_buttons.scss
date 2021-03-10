@@ -47,7 +47,25 @@
         color: #777;
     }
 
-    // &-text {
-        
-    // }
+    &-text {
+        display: inline-block;
+        background: transparent;
+        color: $primary-medium;
+        padding: .4rem .3rem;
+        border-bottom: 1px $primary-medium solid;
+        transition: 0.3s transform, 0.3s box-shadow;
+        margin-bottom: 1rem;
+
+        &:hover {
+            background: $primary-medium;
+            color: #fff;
+            box-shadow: 8px 8px 12px 0 rgba(0,0,0, .2);
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            box-shadow: 4px 4px 12px 0 rgba(0,0,0, .2);
+            transform: translateY(0);
+        }
+    }
 }

@@ -245,6 +245,28 @@ body {
   color: #777;
 }
 
+.btn-text {
+  display: inline-block;
+  background: transparent;
+  color: #55c57a;
+  padding: .4rem .3rem;
+  border-bottom: 1px #55c57a solid;
+  transition: 0.3s transform, 0.3s box-shadow;
+  margin-bottom: 1rem;
+}
+
+.btn-text:hover {
+  background: #55c57a;
+  color: #fff;
+  box-shadow: 8px 8px 12px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-text:active {
+  box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+}
+
 .header {
   position: relative;
   height: 95vh;

@@ -71,13 +71,6 @@ img {
   line-height: 1.2;
 }
 
-.lead-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* Buttons */
 .btn {
   position: relative;
@@ -109,11 +102,6 @@ img {
   transition: 0.4s transform, 0.4s opacity;
 }
 
-.btn-light {
-  background: #fff;
-  color: #777;
-}
-
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
@@ -129,6 +117,11 @@ img {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
+.btn-light {
+  background: #fff;
+  color: #777;
+}
+
 /* Main Header */
 .header {
   position: relative;
@@ -139,11 +132,18 @@ img {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
-.header .header__logo-link {
+.header__logo-link {
   position: absolute;
   top: 2rem;
   left: 2rem;
   width: 70px;
+}
+
+.header__lead-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .header .l-heading,

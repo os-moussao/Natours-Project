@@ -1,6 +1,4 @@
-/* Imports */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap");
-/* Reset */
 *,
 *::after,
 *::before {
@@ -9,18 +7,15 @@
   box-sizing: border-box;
 }
 
-/* Main Styling */
 body {
-  font-family: 'Lato', 'Segoe UI', Tahoma, sans-serif;
-  font-weight: 400;
-  line-height: 1.4;
   background: #f4f4f4;
-  color: #999;
   padding: 30px;
   overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-bottom: 1rem;
 }
 
@@ -33,7 +28,8 @@ a {
   color: #999;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -41,17 +37,55 @@ img {
   width: 100%;
 }
 
-/*
-    Utility Classes
-*/
-.container {
-  max-width: 1280px;
-  margin: auto;
-  padding: 0 1.5rem;
-  overflow: hidden;
+@keyframes move-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  40% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-/* Texts and Headings */
+@keyframes move-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  40% {
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-top {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: 'Lato', 'Segoe UI', Tahoma, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #999;
+}
+
 .txt-center {
   text-align: center;
 }
@@ -71,7 +105,13 @@ img {
   line-height: 1.2;
 }
 
-/* Buttons */
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
 .btn {
   position: relative;
   display: inline-block;
@@ -122,7 +162,6 @@ img {
   color: #777;
 }
 
-/* Main Header */
 .header {
   position: relative;
   height: 95vh;
@@ -169,47 +208,4 @@ img {
 
 .header .lead-box .btn {
   animation: move-top 2s;
-}
-
-/* Animations */
-@keyframes move-left {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  40% {
-    transform: translateX(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes move-right {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  40% {
-    transform: translateX(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes move-top {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }

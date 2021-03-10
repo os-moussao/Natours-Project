@@ -5,10 +5,7 @@ body {
     color: #999;
 }
 
-.txt-center {
-    text-align: center;
-}
-
+// Lead Headings
 .main-heading {
     color: #fff;
     text-transform: uppercase;
@@ -22,4 +19,30 @@ body {
 .sub-heading {
     font-size: 20px;
     line-height: 1.2;
+}
+
+// Sections Headings
+.section-title {
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    background-image: linear-gradient(to right, $primary-light, $primary-dark);
+    color: transparent;
+    background-clip: initial;
+    -webkit-background-clip: text;
+    transition: transform .2s;
+    letter-spacing: 2px;
+    padding-top: .5rem;
+
+    &:hover {
+        transform: skewX(2deg) scale(1.1);
+        text-shadow: 5px 5px 15px rgba(3,3,3, 0.5);
+    }
+}
+
+.section-snd-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: capitalize;
 }

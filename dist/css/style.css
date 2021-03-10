@@ -13,9 +13,7 @@ body {
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   margin-bottom: 1rem;
 }
 
@@ -28,8 +26,7 @@ a {
   color: #999;
 }
 
-ul,
-li {
+ul, li {
   list-style: none;
 }
 
@@ -86,10 +83,6 @@ body {
   color: #999;
 }
 
-.txt-center {
-  text-align: center;
-}
-
 .main-heading {
   color: #fff;
   text-transform: uppercase;
@@ -105,11 +98,101 @@ body {
   line-height: 1.2;
 }
 
+.section-title {
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  color: transparent;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  transition: transform .2s;
+  letter-spacing: 2px;
+  padding-top: .5rem;
+}
+
+.section-title:hover {
+  transform: skewX(2deg) scale(1.1);
+  text-shadow: 5px 5px 15px rgba(3, 3, 3, 0.5);
+}
+
+.section-snd-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
 .container {
   max-width: 1280px;
   margin: auto;
   padding: 0 1.5rem;
   overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary-light {
+  background: #7ed56f;
+  color: #fff;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #111;
+}
+
+.p1 {
+  padding: 1rem;
+}
+
+.p2 {
+  padding: 1.5rem;
+}
+
+.p3 {
+  padding: 2rem;
+}
+
+.py1 {
+  padding: 1rem 0;
+}
+
+.py2 {
+  padding: 1.5rem 0;
+}
+
+.py3 {
+  padding: 2rem 0;
+}
+
+.margin-b-2 {
+  margin-bottom: 2.5rem;
+}
+
+.margin-b-5 {
+  margin-bottom: 5rem;
+}
+
+.section-about {
+  background: #e4e4e4;
+  margin-top: -20vh;
+  padding: 15rem 0;
+}
+
+.section-about__content--text div:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.section-about__content--text p {
+  margin: 0;
 }
 
 .btn {
@@ -165,10 +248,10 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(126, 213, 111, 0.8)), url("../img/hero.jpg");
   background-size: cover;
   background-position: center center;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 .header__logo-link {

@@ -1,0 +1,15 @@
+.section-about {
+    background: $light-e4;
+    margin-top: -20vh;
+    padding: 15rem 0;
+
+    &__content--text {
+        div:not(:last-child) {
+            margin-bottom: 2.5rem;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}

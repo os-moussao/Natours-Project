@@ -5,3 +5,36 @@
     padding: 0 1.5rem;
     overflow: hidden;
 }
+
+// Texts
+.text-center {
+    text-align: center;
+}
+
+// Backgrounds
+.bg {
+    &-primary-light {
+        background: $primary-light;
+        color: #fff;
+    }
+    &-dark {
+        background: $dark;
+        color: #fff;
+    }
+    &-light {
+        background: $light;
+        color: #111;
+    }
+}
+
+// Paddings
+.p1 { padding: 1rem;}
+.p2 { padding: 1.5rem;}
+.p3 { padding: 2rem;}
+.py1 { padding: 1rem 0;}
+.py2 { padding: 1.5rem 0;}
+.py3 { padding: 2rem 0;}
+
+// Margins
+.margin-b-2 { margin-bottom: 2.5rem;}
+.margin-b-5 { margin-bottom: 5rem;}

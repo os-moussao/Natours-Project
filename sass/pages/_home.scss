@@ -1,6 +1,5 @@
 .section-about {
     background: $light-e4;
-    color: $dark-5;
     margin-top: -20vh;
     padding: calc(20vh + 1.5rem) 0;
 
@@ -28,4 +27,35 @@
         }
     }
 
+}
+
+.features {
+    position: relative;
+    height: 100vh;
+    margin-top: -100px;
+    background-image: linear-gradient(to right bottom,
+        rgba($primary-light, 0.8), rgba($primary-dark, 0.8)),
+        url('../img/nat-4.jpg');
+    background-size: cover;
+    background-position: center center;
+    // clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+
+    &__content {
+        display: flex;
+        padding: 3rem 4rem;
+
+        // position: absolute;
+        // top: 50%;
+        // transform: translateY(-50%);
+        height: 100%;
+        & > * {
+            height: fit-content;
+        }
+        align-items: center;
+    }
+
+    transform: skewY(-6deg);
+    & > * {
+        transform: skewY(6deg);
+    }
 }

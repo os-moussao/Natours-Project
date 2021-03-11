@@ -38,7 +38,7 @@ body {
   font-family: 'Lato', 'Segoe UI', Tahoma, sans-serif;
   font-weight: 400;
   line-height: 1.4;
-  color: #999;
+  color: #555;
 }
 
 .main-heading {
@@ -256,6 +256,7 @@ body {
 
 .composition {
   position: relative;
+  height: 360px;
 }
 
 .composition__img {
@@ -292,10 +293,47 @@ body {
   transform: scale(0.9);
 }
 
+.feature-box {
+  background: rgba(228, 228, 228, 0.8);
+  text-align: center;
+  margin: 2rem;
+  padding: 1.5rem;
+  border-radius: 3px;
+  box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.15);
+  transition: .2s transform;
+  backface-visibility: hidden;
+}
+
+.feature-box__icon {
+  display: inline-block;
+  font-size: 3.75rem;
+  margin-bottom: 1rem;
+  color: transparent;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: initial;
+  -webkit-background-clip: text;
+  backface-visibility: hidden;
+}
+
+.feature-box .section-snd-title {
+  margin-bottom: .5rem;
+  backface-visibility: hidden;
+}
+
+.feature-box__text {
+  margin-top: 0;
+  backface-visibility: hidden;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(126, 213, 111, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-size: cover;
   background-position: center center;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -342,7 +380,6 @@ body {
 
 .section-about {
   background: #e4e4e4;
-  color: #555;
   margin-top: -20vh;
   padding: calc(20vh + 1.5rem) 0;
 }
@@ -370,4 +407,29 @@ body {
   flex: 1;
   margin-left: .5rem;
   padding: 3rem;
+}
+
+.features {
+  position: relative;
+  height: 100vh;
+  margin-top: -100px;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
+  background-size: cover;
+  background-position: center center;
+  transform: skewY(-6deg);
+}
+
+.features__content {
+  display: flex;
+  padding: 3rem 4rem;
+  height: 100%;
+  align-items: center;
+}
+
+.features__content > * {
+  height: fit-content;
+}
+
+.features > * {
+  transform: skewY(6deg);
 }

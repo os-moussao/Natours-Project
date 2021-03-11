@@ -1,15 +1,31 @@
 .section-about {
     background: $light-e4;
+    color: $dark-5;
     margin-top: -20vh;
-    padding: 15rem 0;
+    padding: calc(20vh + 1.5rem) 0;
 
-    &__content--text {
-        div:not(:last-child) {
-            margin-bottom: 2.5rem;
+    &__content {
+        display: flex;
+
+        &--text {
+            flex: 1;
+            margin-right: .5rem;
+            padding-right: 1.5rem;
+            padding-left: .8rem;
+            div:not(:last-child) {
+                margin-bottom: 2.5rem;
+            }
+
+            p {
+                margin: 0;
+            }
         }
 
-        p {
-            margin: 0;
+        &--img {
+            flex: 1;
+            margin-left: .5rem;
+            padding: 3rem;
         }
     }
+
 }

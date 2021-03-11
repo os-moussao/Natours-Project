@@ -1,4 +1,5 @@
-.section-about {
+// Section About
+.about {
     background: $light-e4;
     margin-top: -20vh;
     padding: calc(20vh + 1.5rem) 0;
@@ -11,7 +12,7 @@
             margin-right: .5rem;
             padding-right: 1.5rem;
             padding-left: .8rem;
-            div:not(:last-child) {
+            & > *:not(:last-child) {
                 margin-bottom: 2.5rem;
             }
 
@@ -29,10 +30,11 @@
 
 }
 
+// Section Features
 .features {
     position: relative;
     height: 100vh;
-    margin-top: -100px;
+    margin-top: -80px;
     background-image: linear-gradient(to right bottom,
         rgba($primary-light, 0.8), rgba($primary-dark, 0.8)),
         url('../img/nat-4.jpg');
@@ -58,4 +60,11 @@
     & > * {
         transform: skewY(6deg);
     }
+}
+
+// Section Tours
+.tours {
+    background: $light-e4;
+    margin-top: -70px;
+    padding: 1.5rem 0;
 }

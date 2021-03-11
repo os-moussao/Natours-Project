@@ -1,6 +1,5 @@
 .composition {
     position: relative;
-    height: 360px;
 
     &__img {
         width: 55%;
@@ -26,7 +25,7 @@
 
         &:hover {
             outline: .7rem $primary-medium solid;
-            transform: scale(1.2);
+            transform: scale(1.08);
             box-shadow: 0 25px 40px 0 rgba(#000, .4);
             z-index: 1;
         }

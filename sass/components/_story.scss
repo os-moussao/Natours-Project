@@ -1,0 +1,36 @@
+.story {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px 0 rgba(#000, .5);
+    background: $light-e4;
+    border-radius: 5px;
+    padding: 2rem;
+    transform: skewX(-12deg);
+    display: flex;
+
+    &__shape {
+        display: block;
+        width: 150px;
+        height: 150px;
+        transform: skewX(12deg);
+        // float: left;
+        // -webkit-shape-outside: circle(50% at 50% 50%);
+        // shape-outside: circle(50% at 50% 50%); // For this to work , the element has to be floated
+        // -webkit-clip-path: circle(50% at 50% 50%);
+        // clip-path: circle(50% at 50% 50%);
+        // transform: translateX(-1.5rem); // better use translate that margin when floated
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text {
+        transform: skewX(12deg);
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -51,13 +51,23 @@
     // Box Content
     &__img {
         height: 230px;
-        background-blend-mode: screen;
+        background-blend-mode: screen; // COLOR + IMG integration
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--1 {
             background: linear-gradient(to right bottom, $snd-orange-light, $snd-orange-heavy),
             url('../img/nat-5.jpg') no-repeat center center/ cover;
+        }
+
+        &--2 {
+            background: linear-gradient(to right bottom, $primary-light, $primary-dark),
+            url('../img/nat-6.jpg') no-repeat center center/ cover;
+        }
+
+        &--3 {
+            background: linear-gradient(to right bottom, $snd-blue-light, $snd-blue-heavy),
+            url('../img/nat-7.jpg') no-repeat center center/ cover;
         }
     }
 
@@ -75,14 +85,35 @@
         &-span {
             padding: 3px;
             display: inline-block;
-            background: linear-gradient(to right bottom,
-                 rgba($snd-orange-light, .85),
-                 rgba($snd-orange-heavy, .85));
 
             &--2 {
                 position: absolute;
                 top: 37px;
                 right: 0;
+            }
+        }
+
+        &--1 {
+            span {
+                background: linear-gradient(to right bottom,
+                     rgba($snd-orange-light, .85),
+                     rgba($snd-orange-heavy, .85));
+            }
+        }
+
+        &--2 {
+            span {
+                background: linear-gradient(to right bottom,
+                     rgba($primary-light, .85),
+                     rgba($primary-dark, .85));
+            }
+        }
+
+        &--3 {
+            span {
+                background: linear-gradient(to right bottom,
+                     rgba($snd-blue-light, .85),
+                     rgba($snd-blue-heavy, .85));
             }
         }
     }

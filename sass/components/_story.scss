@@ -21,10 +21,9 @@
         shape-outside: circle(50% at 50% 50%); // For this to work , the element has to be floated
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-        transform: translateX(-1.5rem) skewX(12deg); // better use translate that margin when floated
         position: relative;
         overflow: hidden;
-
+        transform: translateX(-1.5rem) skewX(12deg); // better use translate that margin when floated
         img {
             width: initial;
             height: 100%;

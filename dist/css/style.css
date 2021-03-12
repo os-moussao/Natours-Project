@@ -503,9 +503,9 @@ body {
   float: left;
   shape-outside: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
-  transform: translateX(-1.5rem) skewX(12deg);
   position: relative;
   overflow: hidden;
+  transform: translateX(-1.5rem) skewX(12deg);
 }
 
 .story__shape img {
@@ -674,5 +674,5 @@ body {
 }
 
 .stories__content > *:not(:last-child) {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }

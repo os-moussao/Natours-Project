@@ -5,25 +5,55 @@
     background: $light-e4;
     border-radius: 5px;
     padding: 2rem;
+    padding-left: 3.5rem;
     transform: skewX(-12deg);
-    display: flex;
+
+    & * {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
 
     &__shape {
-        display: block;
-        width: 150px;
-        height: 150px;
-        transform: skewX(12deg);
-        // float: left;
-        // -webkit-shape-outside: circle(50% at 50% 50%);
-        // shape-outside: circle(50% at 50% 50%); // For this to work , the element has to be floated
-        // -webkit-clip-path: circle(50% at 50% 50%);
-        // clip-path: circle(50% at 50% 50%);
-        // transform: translateX(-1.5rem); // better use translate that margin when floated
+        height: 120px;
+        width: 120px;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%); // For this to work , the element has to be floated
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-1.5rem) skewX(12deg); // better use translate that margin when floated
+        position: relative;
+        overflow: hidden;
 
         img {
-            width: 100%;
+            width: initial;
             height: 100%;
+            transform: translateX(-1.9rem) scale(1);
+            transition: .6s all ease;
         }
+    }
+
+    &__caption {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        opacity: 0;
+        transition: .6s all ease;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__shape img {
+        filter: blur(3px) brightness(70%);
+        transform: translateX(-1.9rem) scale(1);
     }
 
     &__text {

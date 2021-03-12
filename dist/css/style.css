@@ -234,13 +234,24 @@ body {
 }
 
 .btn:active {
+  outline: none;
   transform: translateY(-1.5px);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-heavy {
+  background: #28b485;
+  color: #fff;
 }
 
 .btn-light {
   background: #fff;
   color: #777;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
 }
 
 .btn-text {
@@ -563,7 +574,7 @@ body {
 }
 
 .form__group:not(:last-child) {
-  margin-bottom: 2rem;
+  padding-bottom: .5rem;
 }
 
 .form__label {
@@ -605,6 +616,55 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-40px);
+}
+
+.form__radio {
+  width: 40%;
+  display: inline-block;
+}
+
+.form__radio:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.form__radio-label {
+  cursor: pointer;
+  display: flex;
+  height: 3.5rem;
+  align-items: center;
+}
+
+.form__radio-btn {
+  height: 30px;
+  width: 30px;
+  border: 5px solid #28b485;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: .9rem;
+  position: relative;
+}
+
+.form__radio-btn::after {
+  content: '';
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  background: #28b485;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .3s opacity;
+}
+
+.form__radio-input:checked + .form__radio-label .form__radio-btn::after {
+  opacity: 1;
+}
+
+.form__radio-input {
+  display: none;
 }
 
 .header {
@@ -739,7 +799,7 @@ body {
 }
 
 .booking {
-  padding: 6rem 0;
+  padding: 7rem 0;
   background: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 
@@ -747,14 +807,14 @@ body {
   background: url("../img/nat-10.jpg") no-repeat center center/cover;
   border-radius: 3px;
   box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   overflow: hidden;
 }
 
 .booking__form {
-  width: 55%;
+  width: 60%;
   padding: 60px;
-  background: rgba(228, 228, 228, 0.8);
-  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+  background: rgba(228, 228, 228, 0.9);
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
 }

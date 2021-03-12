@@ -268,7 +268,7 @@ body {
   box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.4);
   position: absolute;
   transition: .2s all;
-  outline-offset: 1.25rem;
+  outline-offset: 1rem;
 }
 
 .composition__img-1 {
@@ -334,12 +334,116 @@ body {
   box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.4);
 }
 
+.tour-box {
+  perspective: 1500px;
+  -moz-perspective: 1500px;
+  position: relative;
+  margin: 1.5rem;
+  height: 500px;
+}
+
+.tour-box__side {
+  height: 500px;
+  transition: .8s all ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.15);
+}
+
+.tour-box__side-front {
+  background: #fff;
+}
+
+.tour-box__side-back {
+  background: #55c57a;
+  transform: rotateY(180deg);
+}
+
+.tour-box__side-back--1 {
+  background: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+
+.tour-box__side-back--2 {
+  background: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+.tour-box__side-back--3 {
+  background: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+
+.tour-box:hover .tour-box__side-front {
+  transform: rotateY(-180deg);
+}
+
+.tour-box:hover .tour-box__side-back {
+  transform: rotateY(0);
+}
+
+.tour-box__img {
+  height: 230px;
+  background-blend-mode: screen;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.tour-box__img--1 {
+  background: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg") no-repeat center center/cover;
+}
+
+.tour-box__heading {
+  font-size: 1.75rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  width: 75%;
+}
+
+.tour-box__heading-span {
+  padding: 3px;
+  display: inline-block;
+  background: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+}
+
+.tour-box__heading-span--2 {
+  position: absolute;
+  top: 37px;
+  right: 0;
+}
+
+.tour-box__heading-span--1 {
+  background: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+}
+
+.tour-box__details {
+  width: 55%;
+  margin: 1.3rem auto 0 auto;
+}
+
+.tour-box__details li {
+  text-align: center;
+  padding: 10px;
+  color: #777;
+}
+
+.tour-box__details li:not(:last-child) {
+  border-bottom: #999 1px dotted;
+}
+
 .header {
   position: relative;
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-size: cover;
   background-position: center center;
+  --webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
@@ -415,7 +519,7 @@ body {
 
 .features {
   position: relative;
-  height: 100vh;
+  padding: 5rem 0;
   margin-top: -80px;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
   background-size: cover;
@@ -441,5 +545,12 @@ body {
 .tours {
   background: #e4e4e4;
   margin-top: -70px;
-  padding: 1.5rem 0;
+  padding: 10rem 0;
+}
+
+.tours__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 0 3rem;
 }

@@ -1,0 +1,116 @@
+.tour-box {
+    perspective: 1500px;
+    -moz-perspective: 1500px;
+    position: relative;
+    margin: 1.5rem;
+
+    height: 500px; //fix
+
+    &__side {
+        height: 500px;
+        transition: .8s all ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden; // Hiding the back part of an element
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 15px 40px 0 rgba(#000, .15);
+
+        &-front {
+            background: #fff;
+        }
+
+        &-back {
+            background: $primary-medium;
+            transform: rotateY(180deg);
+
+            &--1 {
+                background: linear-gradient(to right bottom, $snd-orange-light, $snd-orange-heavy);
+            }
+
+            &--2 {
+                background: linear-gradient(to right bottom, $primary-light, $primary-dark);
+            }
+
+            &--3 {
+                background: linear-gradient(to right bottom, $snd-blue-light, $snd-blue-heavy);
+            }
+        }
+    }
+
+    &:hover &__side-front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side-back {
+        transform: rotateY(0);
+    }
+
+    // Box Content
+    &__img {
+        height: 230px;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1 {
+            background: linear-gradient(to right bottom, $snd-orange-light, $snd-orange-heavy),
+            url('../img/nat-5.jpg') no-repeat center center/ cover;
+        }
+    }
+
+    &__heading {
+        font-size: 1.75rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: #fff;
+        position: absolute;
+        top: 120px;
+        right: 20px;
+        width: 75%;
+
+        &-span {
+            padding: 3px;
+            display: inline-block;
+            background: linear-gradient(to right bottom,
+                 rgba($snd-orange-light, .85),
+                 rgba($snd-orange-heavy, .85));
+
+            &--2 {
+                position: absolute;
+                top: 37px;
+                right: 0;
+            }
+        }
+    }
+
+    &__heading-span {
+        // padding: 10px 15px;
+        // -webkit-box-decoration-break: clone;
+        // box-decoration-break: clone;
+
+        &--1 {
+            background: linear-gradient(to right bottom,
+                rgba($snd-orange-light, .85),
+                rgba($snd-orange-heavy, .85));
+        }
+    }
+
+    &__details {
+        width: 55%;
+        margin: 1.3rem auto 0 auto;
+
+        li {
+            text-align: center;
+            padding: 10px;
+            color: $light-7;
+
+            &:not(:last-child) {
+                border-bottom: $light-9 1px dotted;
+            }
+        }
+    }
+}

@@ -91,3 +91,24 @@
 }
 
 // Section Booking
+.booking {
+    padding: 6rem 0;
+    background: linear-gradient(to right bottom,
+    $primary-light, $primary-dark);
+
+    &-box {
+        background: url('../img/nat-10.jpg') no-repeat center center/ cover; //cover = 100%;
+        border-radius: 3px;
+        box-shadow: 0 15px 20px 0 rgba(#000 , .5);
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    &__form {
+        width: 55%;
+        padding: 60px;
+        background: rgba($light-e4, .8);
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    }
+}

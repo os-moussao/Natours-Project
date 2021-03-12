@@ -13,7 +13,7 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin-bottom: 1rem;
 }
 
@@ -435,6 +435,24 @@ body {
 
 .tour-box__details li:not(:last-child) {
   border-bottom: #999 1px dotted;
+}
+
+.tour-box__cta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.tour-box__cta--price {
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.tour-box__cta--price h2 {
+  font-size: 3.75rem;
+  font-weight: 100;
 }
 
 .header {

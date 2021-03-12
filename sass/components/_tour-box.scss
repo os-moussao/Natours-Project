@@ -113,4 +113,22 @@
             }
         }
     }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+
+        &--price {
+            color: #fff;
+            margin-bottom: 4rem;
+
+            h2 {
+                font-size: 3.75rem;
+                font-weight: 100;
+            }
+        }
+    }
 }

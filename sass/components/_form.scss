@@ -1,0 +1,48 @@
+.form {
+    &__group {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__label {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 700;
+        margin: .5rem 0 0 1.3rem;
+        transition: .4s all;
+    }
+
+    &__input {
+        display: block;
+        padding: 15px 20px;
+        border-radius: 3px;
+        width: 90%;
+        background: rgba(#fff, .65);
+        border: none;
+        font-family: inherit;
+        color: inherit;
+        outline: none;
+        border-bottom: 3px transparent solid;
+        transition: .4s box-shadow ease, .4s border ease;
+
+        &:focus {
+            border-bottom: 3px $primary-medium solid;
+            box-shadow: 0 0 15px 0 rgba(#000, .3);
+
+            &:invalid {
+                border-bottom: 3px $snd-orange-heavy solid;
+            }
+        }
+
+        &::-webkit-input-placeholder {
+            color: $light-9;
+        }
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0; // The element is still there and can be selected --> visibility: hidden
+        visibility: hidden; // Can't be animated --> opacity: 0
+        transform: translateY(-40px);
+    }
+}

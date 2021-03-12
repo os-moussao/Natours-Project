@@ -33,7 +33,6 @@ body {
     -webkit-background-clip: text;
     transition: transform .2s;
     letter-spacing: 2px;
-    padding-top: .5rem;
 
     &:hover {
         transform: skewX(2deg) scale(1.1);

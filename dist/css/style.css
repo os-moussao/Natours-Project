@@ -67,7 +67,6 @@ body {
   -webkit-background-clip: text;
   transition: transform .2s;
   letter-spacing: 2px;
-  padding-top: .5rem;
 }
 
 .section-title:hover {
@@ -561,6 +560,51 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form__label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  margin: .5rem 0 0 1.3rem;
+  transition: .4s all;
+}
+
+.form__input {
+  display: block;
+  padding: 15px 20px;
+  border-radius: 3px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.65);
+  border: none;
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+  border-bottom: 3px transparent solid;
+  transition: .4s box-shadow ease, .4s border ease;
+}
+
+.form__input:focus {
+  border-bottom: 3px #55c57a solid;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px #ff7730 solid;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-40px);
 }
 
 .header {

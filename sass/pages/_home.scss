@@ -79,7 +79,7 @@
 // Section Stories
 .stories {
     padding: 5rem 0;
-    background: #fff;
+    position: relative;
 
     &__content {
         width: 100%;
@@ -89,3 +89,5 @@
         }
     }
 }
+
+// Section Booking

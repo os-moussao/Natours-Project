@@ -893,6 +893,20 @@ body {
   bottom: -10px;
 }
 
+.navigation__checkbox:checked + .navigation__btn .navigation__icon {
+  background: transparent;
+}
+
+.navigation__checkbox:checked + .navigation__btn .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked + .navigation__btn .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
 .about {
   background: #e4e4e4;
   margin-top: -20vh;

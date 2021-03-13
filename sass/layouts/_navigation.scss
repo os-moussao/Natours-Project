@@ -113,4 +113,19 @@
         &::before { top: -10px;}
         &::after { bottom: -10px;}
     }
+
+    // Hamburger icon animation
+    &__checkbox:checked + &__btn &__icon {
+        background: transparent;
+
+        &::before {
+            top: 0;
+            transform: rotate(135deg);
+        }
+
+        &::after {
+            top: 0;
+            transform: rotate(-135deg);
+        }
+    }
 }

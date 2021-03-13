@@ -39,6 +39,7 @@
         opacity: 0;
         visibility: hidden;
         transition: 1s all;
+        transition-delay: .5s;
     }
 
     &__list {
@@ -80,6 +81,18 @@
         opacity: 1;
         visibility: visible;
         @include move-right-1;
+        animation-delay: .5s;
         // animation-timing-function: cubic-bezier(.21,-0.21,.63,1.29);
+    }
+
+    // Hamburger Icon
+    &__icon {
+        &,
+        &::after,
+        &::before {
+            width: 30px;
+            height: 3px;
+            background: #333;
+        }
     }
 }

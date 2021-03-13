@@ -810,6 +810,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: 1s all;
+  transition-delay: .5s;
 }
 
 .navigation__list {
@@ -852,6 +853,13 @@ body {
   visibility: visible;
   backface-visibility: hidden;
   animation: move-right 1s;
+  animation-delay: .5s;
+}
+
+.navigation__icon, .navigation__icon::after, .navigation__icon::before {
+  width: 30px;
+  height: 3px;
+  background: #333;
 }
 
 .about {

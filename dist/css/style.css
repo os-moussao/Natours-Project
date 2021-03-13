@@ -779,8 +779,8 @@ body {
   height: 70px;
   width: 70px;
   position: fixed;
-  top: 60px;
-  right: 60px;
+  top: 50px;
+  right: 50px;
   z-index: 20;
   border-radius: 50%;
   cursor: pointer;
@@ -792,8 +792,8 @@ body {
   width: 60px;
   border-radius: 50%;
   position: fixed;
-  top: 65px;
-  right: 65px;
+  top: 55px;
+  right: 55px;
   background-image: radial-gradient(#7ed56f 5%, #28b485 25%);
   z-index: 10;
   transition: 1s transform cubic-bezier(0.65, 0, 0.35, 1);
@@ -809,7 +809,7 @@ body {
   z-index: 15;
   opacity: 0;
   visibility: hidden;
-  transition: 1s all;
+  transition: 1s visibility, .5 opacity;
   transition-delay: .5s;
 }
 
@@ -856,10 +856,41 @@ body {
   animation-delay: .5s;
 }
 
+.navigation__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .navigation__icon, .navigation__icon::after, .navigation__icon::before {
+  display: inline-block;
   width: 30px;
-  height: 3px;
+  height: 2px;
   background: #333;
+  transition: all .2s;
+}
+
+.navigation__icon::after, .navigation__icon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.navigation__icon::before {
+  top: -8px;
+}
+
+.navigation__icon::after {
+  bottom: -8px;
+}
+
+.navigation__btn:hover .navigation__icon::before {
+  top: -10px;
+}
+
+.navigation__btn:hover .navigation__icon::after {
+  bottom: -10px;
 }
 
 .about {

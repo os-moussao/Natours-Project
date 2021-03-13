@@ -8,8 +8,8 @@
         height: 70px;
         width: 70px;
         position: fixed;
-        top: 60px;
-        right: 60px;
+        top: 50px;
+        right: 50px;
         z-index: 20;
         border-radius: 50%;
         cursor: pointer;
@@ -21,8 +21,8 @@
         width: 60px;
         border-radius: 50%;
         position: fixed;
-        top: 65px;
-        right: 65px;
+        top: 55px;
+        right: 55px;
         background-image: radial-gradient($primary-light 5%, $primary-dark 25%);
         z-index: 10;
         transition: 1s transform cubic-bezier(0.65, 0, 0.35, 1);
@@ -38,7 +38,7 @@
         z-index: 15;
         opacity: 0;
         visibility: hidden;
-        transition: 1s all;
+        transition: 1s visibility, .5 opacity;
         transition-delay: .5s;
     }
 
@@ -87,12 +87,30 @@
 
     // Hamburger Icon
     &__icon {
+        @include center-h-v;
+
         &,
         &::after,
         &::before {
+            display: inline-block;
             width: 30px;
-            height: 3px;
+            height: 2px;
             background: #333;
+            transition: all .2s;
         }
+
+        &::after, &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+
+        &::before { top: -8px;}
+        &::after { bottom: -8px;}
+    }
+
+    &__btn:hover &__icon {
+        &::before { top: -10px;}
+        &::after { bottom: -10px;}
     }
 }

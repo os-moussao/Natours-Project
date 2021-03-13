@@ -120,7 +120,7 @@
 
         &::before {
             top: 0;
-            transform: rotate(135deg);
+            transform: rotate(135deg); // transform-origin: (default: center); tells where to rotate.
         }
 
         &::after {

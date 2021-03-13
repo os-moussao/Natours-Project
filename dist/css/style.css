@@ -716,6 +716,59 @@ body {
   animation: move-top 2s;
 }
 
+.footer {
+  background: #333;
+  padding: 60px 50px;
+}
+
+.footer__logo-box {
+  width: 15%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  color: #999;
+}
+
+.footer__nav-ul {
+  display: inline-block;
+  border-top: 1px #999 solid;
+  padding-top: 1rem;
+}
+
+.footer__nav-item {
+  display: inline-block;
+  padding: 0 .6rem;
+}
+
+.footer__link {
+  color: #c8c8c8;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 0 3px;
+  transition: .3s box-shadow, .3s transform;
+}
+
+.footer__link:hover {
+  color: #55c57a;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+  transform: translateY(-1px);
+}
+
+.footer__copyright {
+  border-top: 1px #999 solid;
+  padding-top: 1rem;
+}
+
+.footer__copyright p {
+  margin: 0;
+}
+
 .about {
   background: #e4e4e4;
   margin-top: -20vh;

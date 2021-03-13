@@ -683,7 +683,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%;
+  width: 65%;
   border-radius: 5px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
   display: flex;
@@ -707,8 +707,20 @@ body {
 }
 
 .popup__text-box {
+  padding: 50px 30px;
   width: 67%;
   background: #fff;
+}
+
+.popup__text-box .section-snd-title {
+  margin: 0;
+}
+
+.popup__text {
+  column-count: 2;
+  column-gap: 3rem;
+  column-rule: 1px #e4e4e4 solid;
+  hyphens: auto;
 }
 
 .header {

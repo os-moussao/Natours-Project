@@ -1,3 +1,4 @@
+// Center horizontal and vertival
 @mixin center-h-v {
     position: absolute;
     top: 50%;
@@ -5,6 +6,15 @@
     transform: translate(-50%, -50%);
 }
 
+// Text hyphens
+@mixin hyphens($proprety) {
+    -ms-hyphens: $proprety;
+    -moz-hyphens: $proprety;
+    -webkit-hyphens: $proprety;
+    hyphens: $proprety;
+}
+
+// Animations
 @mixin move-right-1 {
     backface-visibility: hidden;
     animation: move-right 1s;

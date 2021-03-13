@@ -1,0 +1,33 @@
+@mixin center-h-v {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin move-right-1 {
+    backface-visibility: hidden;
+    animation: move-right 1s;
+}
+@mixin move-right-2 {
+    backface-visibility: hidden;
+    animation: move-right 2s;
+}
+
+@mixin move-left-1 {
+    backface-visibility: hidden;
+    animation: move-left 1s;
+}
+@mixin move-left-2 {
+    backface-visibility: hidden;
+    animation: move-left 2s;
+}
+
+@mixin move-top-1 {
+    backface-visibility: hidden;
+    animation: move-top 1s;
+}
+@mixin move-top-2 {
+    backface-visibility: hidden;
+    animation: move-top 2s;
+}

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap");
 *,
 *::after,
 *::before {
@@ -767,6 +768,90 @@ body {
 
 .footer__copyright p {
   margin: 0;
+}
+
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__btn {
+  background: #fff;
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  top: 60px;
+  right: 60px;
+  z-index: 20;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navigation__background {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: fixed;
+  top: 65px;
+  right: 65px;
+  background-image: radial-gradient(#7ed56f 5%, #28b485 25%);
+  z-index: 10;
+  transition: 1s transform cubic-bezier(0.65, 0, 0.35, 1);
+  opacity: 0.9;
+}
+
+.navigation__nav {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 15;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s all;
+}
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.navigation__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.navigation__link {
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 300%;
+  transition: background .9s, color .6s, transform .6s;
+}
+
+.navigation__link:hover {
+  background-position: 100%;
+  color: #55c57a;
+  transform: translateX(10px);
+  box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(100);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  visibility: visible;
+  backface-visibility: hidden;
+  animation: move-right 1s;
 }
 
 .about {

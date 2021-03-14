@@ -7,6 +7,10 @@
     &__content {
         display: flex;
 
+        @include respond(tab-port) {
+            flex-direction: column;
+        }
+
         &--text {
             flex: 1;
             margin-right: .5rem;
@@ -54,6 +58,11 @@
             height: fit-content;
         }
         align-items: center;
+
+        @include respond(tab-port) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     transform: skewY(-6deg);
@@ -72,18 +81,23 @@
     margin-top: -70px;
     padding: 10rem 0;
 
+    @include respond(big-desk) {
+        margin-top: -110px;
+    }
+
     &__content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
-        padding: 0 3rem;
-    }
+        margin: 0 3rem;
 
-    @include respond(big-desk) {
-        margin-top: -110px;
-
-        &__content {
+        @include respond(big-desk) {
             grid-gap: 4rem;
+        }
+
+        // Display children in a column
+        @include respond(tab-port) {
+            display: block;
         }
     }
 }

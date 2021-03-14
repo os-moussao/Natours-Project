@@ -6,6 +6,12 @@
 
     height: 500px; //fix
 
+    // Centering
+    @include respond(tab-port) {
+        width: 400px;
+        margin: 1.5rem auto;
+    }
+
     &__side {
         height: 500px;
         transition: .8s all ease;

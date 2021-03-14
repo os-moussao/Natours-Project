@@ -1,4 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap");
+/*
+0 - 600: Phone
+600 - 900: Tablet Portrait
+900 - 1200: Tablet Landscape
+1800+: Big Desktops
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desk
+*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap");
 *,
 *::after,
@@ -9,7 +20,14 @@
 }
 
 html {
+  font-size: 100%;
   scroll-behavior: smooth;
+}
+
+@media (min-width: 1700px) {
+  html {
+    font-size: 120%;
+  }
 }
 
 body {
@@ -1050,6 +1068,12 @@ body {
   transform: skewY(6deg);
 }
 
+@media (min-width: 1700px) {
+  .features {
+    margin-top: -130px;
+  }
+}
+
 .tours {
   background: #e4e4e4;
   margin-top: -70px;
@@ -1061,6 +1085,15 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   padding: 0 3rem;
+}
+
+@media (min-width: 1700px) {
+  .tours {
+    margin-top: -110px;
+  }
+  .tours__content {
+    grid-gap: 4rem;
+  }
 }
 
 .stories {

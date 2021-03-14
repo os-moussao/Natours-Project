@@ -15,12 +15,24 @@ html {
     @include respond(big-desk) {
         font-size: 120%;
     }
+
+    @include respond(tab-land) {
+        font-size: 90%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 80%;
+    }
 }
 
 body {
     background: #f4f4f4;
-    padding: 30px;
+    padding: 1.8rem;
     overflow-x: hidden;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }
 
 h1, h2, h3, h4 {

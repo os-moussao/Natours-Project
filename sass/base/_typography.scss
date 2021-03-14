@@ -11,14 +11,35 @@ body {
     text-transform: uppercase;
 }
 
+.l-heading,
+.sub-heading {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.7;
+
+    @include respond(phone) {
+        line-height: 1.5;
+    }
+}
+
 .l-heading {
     font-size: 4rem;
-    line-height: 1.2;
+    letter-spacing: 35px;
+
+    @include respond(phone) {
+        font-size: 3rem;
+        letter-spacing: 1rem;
+    }
 }
 
 .sub-heading {
     font-size: 20px;
-    line-height: 1.2;
+    letter-spacing: 15px;
+
+    @include respond(phone) {
+        letter-spacing: .6rem;
+    }
 }
 
 // Sections Headings
@@ -33,6 +54,10 @@ body {
     -webkit-background-clip: text;
     transition: transform .2s;
     letter-spacing: 2px;
+
+    @include respond(phone) {
+        font-size: 1.8rem;
+    }
 
     &:hover {
         transform: skewX(2deg) scale(1.1);

@@ -30,10 +30,28 @@ html {
   }
 }
 
+@media (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 80%;
+  }
+}
+
 body {
   background: #f4f4f4;
-  padding: 30px;
+  padding: 1.8rem;
   overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding: 0;
+  }
 }
 
 h1, h2, h3, h4 {
@@ -69,14 +87,42 @@ body {
   text-transform: uppercase;
 }
 
+.l-heading,
+.sub-heading {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .l-heading,
+  .sub-heading {
+    line-height: 1.5;
+  }
+}
+
 .l-heading {
   font-size: 4rem;
-  line-height: 1.2;
+  letter-spacing: 35px;
+}
+
+@media (max-width: 600px) {
+  .l-heading {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+  }
 }
 
 .sub-heading {
   font-size: 20px;
-  line-height: 1.2;
+  letter-spacing: 15px;
+}
+
+@media (max-width: 600px) {
+  .sub-heading {
+    letter-spacing: .6rem;
+  }
 }
 
 .section-title {
@@ -90,6 +136,12 @@ body {
   -webkit-background-clip: text;
   transition: transform .2s;
   letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
 }
 
 .section-title:hover {
@@ -796,23 +848,12 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.header .l-heading,
-.header .sub-heading {
-  display: block;
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: 35px;
-  line-height: 1.7;
-}
-
 .header .l-heading {
   backface-visibility: hidden;
   animation: move-left 2s;
 }
 
 .header .sub-heading {
-  letter-spacing: 15px;
-  font-weight: 700;
   animation: move-right 2s;
   margin-bottom: 1.5rem;
 }

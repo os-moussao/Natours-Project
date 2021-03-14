@@ -23,23 +23,12 @@
         transform: translate(-50%, -50%);
     }
 
-    .l-heading,
-    .sub-heading {
-        display: block;
-        text-align: center;
-        font-weight: 700;
-        letter-spacing: 35px;
-        line-height: 1.7;
-    }
-
     .l-heading {
         backface-visibility: hidden;
         animation: move-left 2s;
     }
 
     .sub-heading {
-        letter-spacing: 15px;
-        font-weight: 700;
         animation: move-right 2s;
         margin-bottom: 1.5rem;
     }

@@ -27,6 +27,7 @@ $breakpoint argument choices:
 - tab-land
 - big-desk
 */
+// ORDER OF CHANGE: base, typo, mixins, utility > layouts (changing grids), pages, components
 
 @mixin respond($breakpoint) {
     @if $breakpoint == big-desk {

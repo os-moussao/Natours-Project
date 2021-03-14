@@ -8,6 +8,16 @@
     background: rgba(#000, .6);
     // filter: blur(3px) brightness(70%);
 
+    // Hiding
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .5s, opacity .5s;
+    // Showing popup
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
     &__content {
         @include center-h-v;
         width: 65%;

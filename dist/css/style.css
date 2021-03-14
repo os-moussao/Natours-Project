@@ -204,7 +204,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
-  background: #55c57a;
+  background: linear-gradient(to right bottom, #7ed56f, #28b485);
   color: #fff;
   transition: 0.3s transform, 0.3s box-shadow;
   border-radius: 100px;
@@ -246,7 +246,7 @@ body {
 }
 
 .btn-light {
-  background: #fff;
+  background: linear-gradient(to right bottom, #fff, #e4e4e4);
   color: #777;
 }
 
@@ -267,7 +267,7 @@ body {
 }
 
 .btn-text:hover {
-  background: #55c57a;
+  background: linear-gradient(to right bottom, #7ed56f, #28b485);
   color: #fff;
   box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);

@@ -24,10 +24,10 @@
         <div class="navigation__background"></div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link">ABOUT NATOURS</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Popular Tours</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Book Now</a></li>
+                <li class="navigation__item"><a href="#about" class="navigation__link">ABOUT NATOURS</a></li>
+                <li class="navigation__item"><a href="#tours" class="navigation__link">Popular Tours</a></li>
+                <li class="navigation__item"><a href="#stories" class="navigation__link">Stories</a></li>
+                <li class="navigation__item"><a href="#booking" class="navigation__link">Book Now</a></li>
                 <li class="navigation__item"><a href="https://github.com/Oussama-Moussaoui/Natours-Project" target="_blank" class="navigation__link">Source Code</a></li>
             </ul>
         </nav>
@@ -50,9 +50,9 @@
     <!-- Main Content -->
     <main>
         <!-- Section About -->
-        <section class="about" id="about">
+        <section class="about">
             <div class="container">
-                <h2 class="section-title margin-b-5">
+                <h2 class="section-title margin-b-5" id="about">
                     Exciting Tours for Adventurous People
                 </h2>
 
@@ -90,9 +90,9 @@
         </section>
 
         <!-- Section Features -->
-        <section class="features" id="features">
+        <section class="features">
             <div class="features__content">
-                <div class="feature-box">
+                <div class="feature-box" id="features">
                     <i class="feature-box__icon icon-basic-world"></i>
                     <h3 class="section-snd-title">Explore The World</h3>
                     <p class="feature-box__text">
@@ -124,11 +124,11 @@
         </section>
 
         <!-- Section Tours -->
-        <section class="tours bg-light-e4" id="tours">
-            <h2 class="section-title margin-b-5">
+        <section class="tours bg-light-e4">
+            <h2 class="section-title margin-b-5" id="tours">
                 Most popular tours
             </h2>
-            <div class="tours__content">
+            <div class="tours__content" id="tour">
                 <div class="tour-box tour-box-1">
                     <div class="tour-box__side tour-box__side-front tour-box__side-front--1">
                         <div class="tour-box__img tour-box__img--1"></div>
@@ -211,7 +211,7 @@
         </section>
 
         <!-- Section Stories -->
-        <section class="stories" id="stories">
+        <section class="stories">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="img/video.mp4" type="video/mp4">
@@ -219,7 +219,7 @@
                         Your browser is not supported!
                 </video>
             </div>
-            <h2 class="section-title margin-b-5">
+            <h2 class="section-title margin-b-5" id="stories">
                 What our people have to say about us
             </h2>
             <div class="stories__content">
@@ -331,6 +331,7 @@
     <!-- Popups -->
     <div class="popup" id="popup">
         <div class="popup__content">
+            <a href="#tour" class="popup__close">&times;</a>
             <div class="popup__img-box">
                 <!-- <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img-1">
                 <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img-2"> -->

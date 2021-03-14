@@ -81,6 +81,7 @@
         opacity: 1;
         visibility: visible;
         @include move-right-1;
+        animation-duration: .3s;
         animation-delay: .5s;
         // animation-timing-function: cubic-bezier(.21,-0.21,.63,1.29);
     }

@@ -939,6 +939,7 @@ body {
   visibility: visible;
   backface-visibility: hidden;
   animation: move-right 1s;
+  animation-duration: .3s;
   animation-delay: .5s;
 }
 

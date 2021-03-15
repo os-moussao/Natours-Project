@@ -397,6 +397,12 @@ body {
   backface-visibility: hidden;
 }
 
+@media (max-width: 600px) {
+  .feature-box {
+    margin: 2rem 0;
+  }
+}
+
 .feature-box__icon {
   display: inline-block;
   font-size: 3.75rem;
@@ -941,7 +947,7 @@ body {
 
 @media (max-width: 900px) {
   .footer {
-    padding: 35px 20px;
+    padding: 35px 20px 5px 20px;
     font-size: 15px;
   }
 }
@@ -1217,6 +1223,18 @@ body {
   padding: calc(20vh + 1.5rem) 0;
 }
 
+@media (max-width: 900px) {
+  .about {
+    padding: 20vh 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding-top: calc(20vh + 1rem);
+  }
+}
+
 .about__content {
   display: flex;
 }
@@ -1258,6 +1276,12 @@ body {
   transform: skewY(-6deg);
 }
 
+@media (max-width: 900px) {
+  .features {
+    padding: 0;
+  }
+}
+
 .features__content {
   display: flex;
   padding: 3rem 4rem;
@@ -1273,6 +1297,12 @@ body {
   .features__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .features__content {
+    padding: 1rem 4rem;
   }
 }
 
@@ -1304,6 +1334,18 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+  .tours {
+    padding: 7rem 0 3rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .tours {
+    padding-bottom: 2rem;
+  }
+}
+
 .tours__content {
   max-width: 1200px;
   margin: 0 auto;
@@ -1330,6 +1372,18 @@ body {
   position: relative;
 }
 
+@media (max-width: 900px) {
+  .stories {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .stories {
+    padding: 1rem 0 .5rem 0;
+  }
+}
+
 .stories__content {
   width: 100%;
 }
@@ -1341,6 +1395,18 @@ body {
 .booking {
   padding: 7rem 0;
   background: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+@media (max-width: 900px) {
+  .booking {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .booking {
+    padding: 2rem 0;
+  }
 }
 
 .booking-box {

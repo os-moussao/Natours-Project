@@ -8,6 +8,10 @@
     transition: .2s transform;
     backface-visibility: hidden;
 
+    @include respond(phone) {
+        margin: 2rem 0;
+    }
+
     &__icon {
         display: inline-block;
         font-size: 3.75rem;

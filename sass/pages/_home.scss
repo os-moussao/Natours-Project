@@ -4,6 +4,14 @@
     margin-top: -20vh;
     padding: calc(20vh + 1.5rem) 0;
 
+    @include respond(tab-port) {
+        padding: 20vh 0;
+    }
+
+    @include respond(phone) {
+        padding-top: calc(20vh + 1rem);
+    }
+
     &__content {
         display: flex;
 
@@ -46,6 +54,10 @@
     background-position: center center;
     // clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
 
+    @include respond(tab-port) {
+        padding: 0;
+    }
+
     &__content {
         display: flex;
         padding: 3rem 4rem;
@@ -63,6 +75,10 @@
         @include respond(tab-land) {
             display: grid;
             grid-template-columns: 1fr 1fr;
+        }
+
+        @include respond(phone) {
+            padding: 1rem 4rem;
         }
 
         // 1 column 700px and less
@@ -91,6 +107,14 @@
         margin-top: -110px;
     }
 
+    @include respond(tab-port) {
+        padding: 7rem 0 3rem 0;
+    }
+
+    @include respond(phone) {
+        padding-bottom: 2rem;
+    }
+
     &__content {
         max-width: 1200px;
         margin: 0 auto;
@@ -115,6 +139,14 @@
     padding: 5rem 0;
     position: relative;
 
+    @include respond(tab-port) {
+        padding: 2rem 0;
+    }
+
+    @include respond(phone) {
+        padding: 1rem 0 .5rem 0;
+    }
+
     &__content {
         width: 100%;
 
@@ -129,6 +161,14 @@
     padding: 7rem 0;
     background: linear-gradient(to right bottom,
     $primary-light, $primary-dark);
+
+    @include respond(tab-port) {
+        padding: 3rem 0;
+    }
+
+    @include respond(phone) {
+        padding: 2rem 0;
+    }
 
     &-box {
         background: url('../img/nat-10.jpg') no-repeat center center/ cover; //cover = 100%;

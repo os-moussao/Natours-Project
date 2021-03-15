@@ -24,24 +24,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (min-width: 1700px) {
-  html {
-    font-size: 120%;
-  }
-}
-
-@media (max-width: 1200px) {
-  html {
-    font-size: 90%;
-  }
-}
-
-@media (max-width: 900px) {
-  html {
-    font-size: 80%;
-  }
-}
-
 body {
   background: #f4f4f4;
   padding: 1.8rem;
@@ -85,6 +67,7 @@ body {
 .main-heading {
   color: #fff;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .l-heading,
@@ -105,6 +88,12 @@ body {
 .l-heading {
   font-size: 4rem;
   letter-spacing: 35px;
+}
+
+@media (max-width: 900px) {
+  .l-heading {
+    font-size: 3.3rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -136,6 +125,12 @@ body {
   -webkit-background-clip: text;
   transition: transform .2s;
   letter-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+  .section-title {
+    padding: 0 50px;
+  }
 }
 
 @media (max-width: 600px) {

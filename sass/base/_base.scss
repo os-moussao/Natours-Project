@@ -12,17 +12,17 @@ html {
     font-size: 100%;
     scroll-behavior: smooth;
 
-    @include respond(big-desk) {
-        font-size: 120%;
-    }
+    // @include respond(big-desk) {
+    //     font-size: 120%;
+    // }
 
-    @include respond(tab-land) {
-        font-size: 90%;
-    }
+    // @include respond(tab-land) {
+    //     font-size: 90%;
+    // }
 
-    @include respond(tab-port) {
-        font-size: 80%;
-    }
+    // @include respond(tab-port) {
+    //     font-size: 80%;
+    // }
 }
 
 body {

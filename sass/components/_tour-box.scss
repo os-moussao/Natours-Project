@@ -2,18 +2,34 @@
     perspective: 1500px;
     -moz-perspective: 1500px;
     position: relative;
-    margin: 1.5rem;
+    width: 300px;
+    margin: 1.5rem auto;
 
     height: 500px; //fix
 
-    // Centering
+    @include respond(big-desk) {
+        width: 400px;
+    }
+
+    @media (max-width: 1100px) {
+        width: 280px;
+    }
+
+    @media (max-width: 1000px) {
+        width: 260px;
+    }
+
     @include respond(tab-port) {
         width: 400px;
-        margin: 1.5rem auto;
+    }
+
+    @include respond(phone) {
+        width: 70vw;
+        height: 400px;
     }
 
     &__side {
-        height: 500px;
+        height: 100%;
         transition: .8s all ease;
         position: absolute;
         top: 0;
@@ -61,6 +77,10 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
+        @include respond(phone) {
+            height: 150px;
+        }
+
         &--1 {
             background: linear-gradient(to right bottom, $snd-orange-light, $snd-orange-heavy),
             url('../img/nat-5.jpg') no-repeat center center/ cover;
@@ -87,6 +107,12 @@
         top: 120px;
         right: 20px;
         width: 75%;
+
+        @include respond(phone) {
+            font-size: 22px;
+            top: 70px;
+            right: 10px;
+        }
 
         &-span {
             padding: 3px;

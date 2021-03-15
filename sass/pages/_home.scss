@@ -92,16 +92,18 @@
     }
 
     &__content {
+        max-width: 1200px;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
-        margin: 0 3rem;
 
         @include respond(big-desk) {
             grid-gap: 4rem;
+            max-width: 1300px;
         }
 
-        // Display children in a column
+        // Display children in a column for tablet portrait
         @include respond(tab-port) {
             display: block;
         }

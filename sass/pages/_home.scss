@@ -59,9 +59,15 @@
         }
         align-items: center;
 
-        @include respond(tab-port) {
+        // 2 columns in tab port
+        @include respond(tab-land) {
             display: grid;
             grid-template-columns: 1fr 1fr;
+        }
+
+        // 1 column 700px and less
+        @media (max-width: 700px) {
+            display: block;
         }
     }
 

@@ -842,6 +842,13 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
+@media (max-width: 600px) {
+  .header {
+    --webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+}
+
 .header__logo-link {
   position: absolute;
   top: 2rem;

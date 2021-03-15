@@ -956,6 +956,7 @@ body {
 @media (max-width: 600px) {
   .footer__logo-box {
     width: 100px;
+    margin-bottom: 30px;
   }
 }
 

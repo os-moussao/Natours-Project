@@ -26,6 +26,10 @@
         border-bottom: 3px transparent solid;
         transition: .4s box-shadow ease, .4s border ease;
 
+        @include respond(tab-port) {
+            width: 100%;
+        }
+
         &:focus {
             border-bottom: 3px $primary-medium solid;
             box-shadow: 0 0 15px 0 rgba(#000, .3);
@@ -47,11 +51,15 @@
     }
 
     &__radio {
-        width: 40%;
+        // width: 40%;
         display: inline-block;
 
         &:not(:last-child) {
             margin-right: 2rem;
+
+            @include respond(tab-port) {
+                margin-right: 40px;
+            }
         }
 
         &-label {

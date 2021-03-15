@@ -3,25 +3,44 @@
 
     &__img {
         width: 55%;
-        box-shadow: 0 15px 40px 0 rgba(#000, .4);
+        box-shadow: 0 10px 20px 0 rgba(#000, .4);
         position: absolute;
         transition: .2s all;
         outline-offset: 1rem;
 
+        @include respond(tab-port) {
+            width: 36%;
+            outline-offset: .5rem;
+        }
+
         &-1 {
-            position: relative;
             left: 0;
             top: -20px;
+
+            @include respond(tab-port) {
+                position: relative;
+                top: 0;
+            }
         }
 
         &-2 {
             right: 0;
             top: 20px;
+
+            @include respond(tab-port) {
+                top: 0;
+                right: 1rem;
+            }
         }
 
         &-3 {
             left: 20%;
             top: 100px;
+
+            @include respond(tab-port) {
+                top: -20px;
+                left: 30%;
+            }
         }
 
         &:hover {

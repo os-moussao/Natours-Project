@@ -2,11 +2,20 @@
     background: #333;
     padding: 60px 50px;
 
+    @include respond(tab-port) {
+        padding: 35px 20px;
+        font-size: 15px;
+    }
+
     &__logo-box {
-        width: 15%;
+        width: 150px;
         margin: 0 auto;
         text-align: center;
         margin-bottom: 60px;
+
+        @include respond(phone) {
+            width: 100px;
+        }
     }
 
     &__content {
@@ -14,19 +23,38 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 3rem;
         color: $light-9;
+
+        @include respond(phone) {
+            display: block;
+        }
     }
 
     &__nav {
+
+        @include respond(phone) {
+            // text-align: center;
+            margin-bottom: 30px;
+        }
 
         &-ul {
             display: inline-block;
             border-top: 1px $light-9 solid;
             padding-top: 1rem;
+
+            @include respond(phone) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 10px;
+            }
         }
 
         &-item {
             display: inline-block;
             padding: 0 .6rem;
+
+            @include respond(phone) {
+                display: block;
+            }
         }
     }
 
@@ -36,6 +64,10 @@
         display: inline-block;
         padding: 0 3px;
         transition: .3s box-shadow, .3s transform;
+
+        @include respond(phone) {
+            padding: 2px 4px;
+        }
 
         &:hover {
             color: $primary-medium;

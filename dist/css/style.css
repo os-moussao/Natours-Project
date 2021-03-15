@@ -72,7 +72,7 @@ body {
 
 .l-heading,
 .sub-heading {
-  display: block;
+  display: inline-block;
   text-align: center;
   font-weight: 700;
   line-height: 1.7;
@@ -939,6 +939,13 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .header__lead-box {
+    top: 50%;
+  }
 }
 
 .header .l-heading {

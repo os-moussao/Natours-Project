@@ -341,7 +341,7 @@
             <div class="popup__text-box">
                 <h2 class="section-title margin-b-2">Start Booking Now</h2>
                 <h3 class="section-snd-title">29 Days Left &ndash; Don't miss your next vacation</h3>
-                <p class="popup__text">
+                <p class="popup__text" id="popup__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium repellat voluptas quasi at ipsam, vitae soluta ut, vero laboriosam labore ex enim. Rem, facilis recusandae voluptate minima voluptatibus provident cumque quasi perspiciatis? Quod ipsam labore nihil veniam, voluptates voluptas quibusdam sint eligendi consequuntur, soluta minus officia ipsa harum cum. Et repudiandae, quae obcaecati illo earum saepe maiores laudantium ratione.
                 </p>
                 <div class="text-center">
@@ -350,6 +350,13 @@
             </div>
         </div>
     </div>
+
+    <!-- Decreasing popup text -->
+    <script>
+        if (window.innerWidth <= 600) {
+            document.querySelector('#popup__text').innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium repellat voluptas quasi at ipsam, vitae soluta ut, vero laboriosam labore ex enim. Rem, facilis recusandae voluptate minima voluptatibus provident cumque quasi perspiciatis.';
+        }
+    </script>
 </body>
 
 </html>

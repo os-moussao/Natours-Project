@@ -82,17 +82,32 @@
 
         &--1 {
             background: linear-gradient(to right bottom, $snd-orange-light, $snd-orange-heavy),
-            url('../img/nat-5.jpg') no-repeat center center/ cover;
+            url('../img/nat-5-small.jpg') no-repeat center center/ cover;
+
+            @media (min-width: 1500px) {
+                background: linear-gradient(to right bottom, $snd-orange-light, $snd-orange-heavy),
+                url('../img/nat-5.jpg') no-repeat center center/ cover;
+            }
         }
 
         &--2 {
             background: linear-gradient(to right bottom, $primary-light, $primary-dark),
-            url('../img/nat-6.jpg') no-repeat center center/ cover;
+            url('../img/nat-6-small.jpg') no-repeat center center/ cover;
+
+            @media (min-width: 1500px) {
+                background: linear-gradient(to right bottom, $primary-light, $primary-dark),
+                url('../img/nat-6.jpg') no-repeat center center/ cover;
+            }
         }
 
         &--3 {
             background: linear-gradient(to right bottom, $snd-blue-light, $snd-blue-heavy),
-            url('../img/nat-7.jpg') no-repeat center center/ cover;
+            url('../img/nat-7-small.jpg') no-repeat center center/ cover;
+
+            @media (min-width: 1500px) {
+                background: linear-gradient(to right bottom, $snd-blue-light, $snd-blue-heavy),
+                url('../img/nat-7.jpg') no-repeat center center/ cover;
+            }
         }
     }
 

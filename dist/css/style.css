@@ -1446,10 +1446,16 @@ body {
   position: relative;
   padding: 5rem 0;
   margin-top: -80px;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4-small.jpg");
   background-size: cover;
   background-position: center center;
   transform: skewY(-6deg);
+}
+
+@media (min-resolution: 192dpi) and (min-width: 601px), (min-width: 1800px) {
+  .features {
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
+  }
 }
 
 @media (max-width: 900px) {

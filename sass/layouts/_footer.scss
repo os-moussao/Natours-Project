@@ -14,7 +14,7 @@
         margin-bottom: 60px;
 
         @include respond(phone) {
-            width: 100px;
+            // width: 100px;
             margin-bottom: 30px;
         }
     }

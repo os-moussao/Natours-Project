@@ -299,7 +299,11 @@
     <!-- Main Footer -->
     <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full Logo" class="footer__logo">
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 600px)">
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full Logo">
+                </picture>
+                <!-- <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full Logo" class="footer__logo"> -->
             </div>
             <div class="footer__content">
                 <div class="footer__nav">
@@ -351,7 +355,7 @@
         </div>
     </div>
 
-    <!-- Decreasing popup text -->
+    <!-- Decreasing popup text on small screens -->
     <script>
         if (window.innerWidth <= 600) {
             document.querySelector('#popup__text').innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium repellat voluptas quasi at ipsam, vitae soluta ut, vero laboriosam labore ex enim. Rem, facilis recusandae voluptate minima voluptatibus provident cumque quasi perspiciatis.';

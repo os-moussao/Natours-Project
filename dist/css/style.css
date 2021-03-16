@@ -529,7 +529,6 @@ body {
 }
 
 .tour-box__side-back {
-  background: #55c57a;
   transform: rotateY(180deg);
 }
 
@@ -561,7 +560,7 @@ body {
 
 @media (max-width: 600px) {
   .tour-box__img {
-    height: 150px;
+    height: 200px;
   }
 }
 
@@ -592,8 +591,8 @@ body {
 @media (max-width: 600px) {
   .tour-box__heading {
     font-size: 22px;
-    top: 70px;
-    right: 10px;
+    top: 110px;
+    right: 15px;
   }
 }
 
@@ -655,6 +654,47 @@ body {
 .tour-box__cta--price h2 {
   font-size: 3.75rem;
   font-weight: 100;
+}
+
+@media (max-width: 900px) {
+  .tour-box {
+    height: auto;
+  }
+  .tour-box__side {
+    position: relative;
+    height: auto;
+    transition: 0s;
+    box-shadow: none;
+    border: none;
+  }
+  .tour-box__side-front {
+    border-radius: 7px 7px 0 0;
+    padding-bottom: 2.5rem;
+  }
+  .tour-box__side-back {
+    transform: rotateY(0);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    padding: 1.5rem 0;
+    border-radius: 0 0 7px 7px;
+    margin-top: -2.5rem;
+  }
+  .tour-box:hover .tour-box__side-front {
+    transform: none;
+  }
+  .tour-box:hover .tour-box__side-back {
+    transform: none;
+  }
+  .tour-box__cta {
+    position: relative;
+    top: 0;
+    transform: none;
+  }
+  .tour-box__cta--price {
+    margin-bottom: 0;
+  }
+  .tour-box__cta--price h2 {
+    font-size: 3.2rem;
+  }
 }
 
 .story {

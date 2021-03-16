@@ -8,7 +8,7 @@
     padding-left: 3.5rem;
     transform: skewX(-12deg);
 
-    @include respond(phone) {
+    @include respond(tab-port) {
         width: 85%;
         transform: skewX(0);
         padding: 1.5rem;
@@ -31,7 +31,7 @@
         overflow: hidden;
         transform: translateX(-1.5rem) skewX(12deg); // better use translate that margin when floated
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             transform: translateX(0) skewX(0);
             float: none;
             margin: 0 auto 1rem auto;
@@ -57,9 +57,7 @@
         opacity: 0;
         transition: .6s all ease;
 
-        @include respond(phone) {
-            top: 65px;
-            opacity: 1;
+        @include respond(tab-port) {
             font-weight: 400;
         }
     }
@@ -68,24 +66,24 @@
         opacity: 1;
         transform: translate(-50%, -50%);
 
-        @include respond(phone) {
-            transform: translate(-50%, 0);
-        }
+        // @include respond(tab-port) {
+        //     transform: translate(-50%, 0);
+        // }
     }
 
     &:hover &__shape img {
         filter: blur(3px) brightness(70%);
         transform: translateX(-1.9rem) scale(1);
 
-        @include respond(phone) {
-            filter: none;
-        }
+        // @include respond(tab-port) {
+        //     filter: none;
+        // }
     }
 
     &__text {
         transform: skewX(12deg);
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             transform: skewX(0);
             text-align: center;
         }

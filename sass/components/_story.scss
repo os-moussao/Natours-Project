@@ -23,13 +23,18 @@
         height: 120px;
         width: 120px;
         float: left;
-        -webkit-shape-outside: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%); // For this to work , the element has to be floated
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
         position: relative;
         overflow: hidden;
         transform: translateX(-1.5rem) skewX(12deg); // better use translate that margin when floated
+        border-radius: 50%;
+
+        @supports (clip-path: circle(50% at 50% 50%)) or (-webkit-clip-path: circle(50% at 50% 50%)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%); // For this to work , the element has to be floated
+            border-radius: none;
+        }
 
         @include respond(tab-port) {
             transform: translateX(0) skewX(0);

@@ -742,11 +742,18 @@ body {
   height: 120px;
   width: 120px;
   float: left;
-  shape-outside: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%);
   position: relative;
   overflow: hidden;
   transform: translateX(-1.5rem) skewX(12deg);
+  border-radius: 50%;
+}
+
+@supports (clip-path: circle(50% at 50% 50%)) or (-webkit-clip-path: circle(50% at 50% 50%)) {
+  .story__shape {
+    clip-path: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    border-radius: none;
+  }
 }
 
 @media (max-width: 900px) {

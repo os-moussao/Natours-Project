@@ -20,9 +20,9 @@ html {
     //     font-size: 90%;
     // }
 
-    // @include respond(tab-port) {
-    //     font-size: 80%;
-    // }
+    @media (max-width: 295px) {
+        font-size: 80%;
+    }
 }
 
 body {

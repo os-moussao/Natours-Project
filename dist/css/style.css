@@ -24,6 +24,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 295px) {
+  html {
+    font-size: 80%;
+  }
+}
+
 body {
   background: #f4f4f4;
   padding: 1.8rem;
@@ -88,6 +94,7 @@ body {
 .l-heading {
   font-size: 4rem;
   letter-spacing: 35px;
+  text-align: center;
 }
 
 @media (max-width: 900px) {
@@ -103,6 +110,12 @@ body {
   }
 }
 
+@media (max-width: 400px) {
+  .l-heading {
+    font-size: 2rem;
+  }
+}
+
 .sub-heading {
   font-size: 20px;
   letter-spacing: 15px;
@@ -111,6 +124,12 @@ body {
 @media (max-width: 600px) {
   .sub-heading {
     letter-spacing: .6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .sub-heading {
+    font-size: 1rem;
   }
 }
 

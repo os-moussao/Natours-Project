@@ -27,6 +27,7 @@ body {
 .l-heading {
     font-size: 4rem;
     letter-spacing: 35px;
+    text-align: center;
 
     @include respond(tab-port) {
         font-size: 3.3rem;
@@ -36,6 +37,10 @@ body {
         font-size: 3rem;
         letter-spacing: 1rem;
     }
+
+    @media (max-width: 400px) {
+        font-size: 2rem;
+    }
 }
 
 .sub-heading {
@@ -44,6 +49,10 @@ body {
 
     @include respond(phone) {
         letter-spacing: .6rem;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 1rem;
     }
 }
 

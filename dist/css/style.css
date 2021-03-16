@@ -119,12 +119,18 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
-  color: transparent;
-  background-clip: initial;
-  -webkit-background-clip: text;
   transition: transform .2s;
   letter-spacing: 2px;
+  color: #55c57a;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .section-title {
+    color: transparent;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1036,12 +1042,17 @@ body {
     display: none;
   }
   .popup__text-box .section-snd-title {
-    color: transparent;
-    text-align: center;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: #55c57a;
     font-size: 1.5rem;
+    text-align: center;
+  }
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    .popup__text-box .section-snd-title {
+      color: transparent;
+      background-image: linear-gradient(to right, #7ed56f, #28b485);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
   }
 }
 

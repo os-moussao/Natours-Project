@@ -175,6 +175,11 @@ body {
   text-transform: uppercase;
 }
 
+::selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
 .container {
   max-width: 1280px;
   margin: auto;

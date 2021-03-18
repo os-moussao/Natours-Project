@@ -8,7 +8,7 @@
     font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase;
-    background: linear-gradient(to right bottom, $primary-light, $primary-dark);
+    background: linear-gradient(to right bottom, $primary-light, $primary-darker);
     color: #fff;
     transition: 0.3s transform, 0.3s box-shadow;
     border-radius: 100px;
@@ -44,7 +44,7 @@
     }
 
     &-heavy {
-        background: $primary-dark;
+        background: $primary-darker;
         color: #fff;
     }
 
@@ -69,7 +69,7 @@
         margin-bottom: 1rem;
 
         &:hover {
-            background: linear-gradient(to right bottom, $primary-light, $primary-dark);
+            background: linear-gradient(to right bottom, $primary-light, $primary-darker);
             color: #fff;
             box-shadow: 4px 4px 12px 0 rgba(0,0,0, .3);
             transform: translateY(-2px);

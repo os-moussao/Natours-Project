@@ -82,8 +82,8 @@
         }
 
         &--1 {
-            background: linear-gradient(to right bottom, $snd-orange-light, $snd-orange-heavy),
-            url('../img/nat-5-small.jpg') no-repeat center center/ cover;
+            background: linear-gradient(to right bottom, $snd-orange-light, $snd-orange-heavier),
+            url('../img/nat-5-small.jpg') no-repeat center center/ cover; //$snd-orange-heavy
 
             // @media (min-width: 900px),
             // (min-resolution: 190dpi) {
@@ -93,7 +93,7 @@
         }
 
         &--2 {
-            background: linear-gradient(to right bottom, $primary-light, $primary-dark),
+            background: linear-gradient(to right bottom, $primary-light, $primary-darker),
             url('../img/nat-6-small.jpg') no-repeat center center/ cover;
 
             // @media (min-width: 900px),
@@ -104,8 +104,8 @@
         }
 
         &--3 {
-            background: linear-gradient(to right bottom, $snd-blue-light, $snd-blue-heavy),
-            url('../img/nat-7-small.jpg') no-repeat center center/ cover;
+            background: linear-gradient(to right bottom, $snd-blue-light, $snd-blue-heavier),
+            url('../img/nat-7-small.jpg') no-repeat center center/ cover;  //$snd-blue-heavy
 
             // @media (min-width: 900px),
             // (min-resolution: 190dpi) {
@@ -147,7 +147,7 @@
             span {
                 background: linear-gradient(to right bottom,
                      rgba($snd-orange-light, .85),
-                     rgba($snd-orange-heavy, .85));
+                     rgba($snd-orange-heavier, .85));
             }
         }
 
@@ -155,7 +155,7 @@
             span {
                 background: linear-gradient(to right bottom,
                      rgba($primary-light, .85),
-                     rgba($primary-dark, .85));
+                     rgba($primary-darker, .85));
             }
         }
 
@@ -163,7 +163,7 @@
             span {
                 background: linear-gradient(to right bottom,
                      rgba($snd-blue-light, .85),
-                     rgba($snd-blue-heavy, .85));
+                     rgba($snd-blue-heavier, .85));
             }
         }
     }

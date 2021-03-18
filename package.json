@@ -1,0 +1,22 @@
+{
+  "name": "06-natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass ./sass/main.scss ./dist/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oussama-Moussaoui/Natours-Project.git"
+  },
+  "author": "Oussama-Moussaoui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oussama-Moussaoui/Natours-Project/issues"
+  },
+  "homepage": "https://github.com/Oussama-Moussaoui/Natours-Project#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

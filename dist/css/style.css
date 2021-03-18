@@ -1643,12 +1643,18 @@ body {
 }
 
 .booking-box {
-  background: url("../img/nat-10.jpg") no-repeat center center/cover;
+  background: url("../img/nat-10-small.jpg") no-repeat center center/cover;
   border-radius: 3px;
   box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
   width: 85%;
   margin: 0 auto;
   overflow: hidden;
+}
+
+@media (min-resolution: 192dpi) and (min-width: 601px), (min-width: 1300px) {
+  .booking-box {
+    background: url("../img/nat-10.jpg") no-repeat center center/cover;
+  }
 }
 
 .booking__form {

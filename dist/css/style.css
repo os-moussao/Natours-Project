@@ -507,13 +507,8 @@ body {
   position: relative;
   width: 300px;
   margin: 1.5rem auto;
+  width: 25vw;
   height: 500px;
-}
-
-@media only screen and (min-width: 1700px) {
-  .tour-box {
-    width: 400px;
-  }
 }
 
 @media (max-width: 1100px) {
@@ -543,7 +538,7 @@ body {
 
 .tour-box__side {
   height: 100%;
-  transition: .8s all ease;
+  transition: .5s all ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -586,6 +581,7 @@ body {
   height: 230px;
   background-blend-mode: screen;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  backface-visibility: hidden;
 }
 
 @media only screen and (max-width: 600px) {
@@ -598,30 +594,12 @@ body {
   background: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5-small.jpg") no-repeat center center/cover;
 }
 
-@media (min-width: 1500px) {
-  .tour-box__img--1 {
-    background: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg") no-repeat center center/cover;
-  }
-}
-
 .tour-box__img--2 {
   background: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-6-small.jpg") no-repeat center center/cover;
 }
 
-@media (min-width: 1500px) {
-  .tour-box__img--2 {
-    background: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-6.jpg") no-repeat center center/cover;
-  }
-}
-
 .tour-box__img--3 {
   background: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-7-small.jpg") no-repeat center center/cover;
-}
-
-@media (min-width: 1500px) {
-  .tour-box__img--3 {
-    background: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-7.jpg") no-repeat center center/cover;
-  }
 }
 
 .tour-box__heading {

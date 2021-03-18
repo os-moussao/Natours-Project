@@ -4,12 +4,12 @@
     position: relative;
     width: 300px;
     margin: 1.5rem auto;
-
+    width: 25vw;
     height: 500px; //fix
 
-    @include respond(big-desk) {
-        width: 400px;
-    }
+    // @include respond(big-desk) {
+    //     width: 400px;
+    // }
 
     @media (max-width: 1100px) {
         width: 280px;
@@ -30,7 +30,7 @@
 
     &__side {
         height: 100%;
-        transition: .8s all ease;
+        transition: .5s all ease;
         position: absolute;
         top: 0;
         left: 0;
@@ -75,6 +75,7 @@
         background-blend-mode: screen; // COLOR + IMG integration
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        backface-visibility: hidden;
 
         @include respond(phone) {
             height: 200px;
@@ -84,30 +85,33 @@
             background: linear-gradient(to right bottom, $snd-orange-light, $snd-orange-heavy),
             url('../img/nat-5-small.jpg') no-repeat center center/ cover;
 
-            @media (min-width: 1500px) {
-                background: linear-gradient(to right bottom, $snd-orange-light, $snd-orange-heavy),
-                url('../img/nat-5.jpg') no-repeat center center/ cover;
-            }
+            // @media (min-width: 900px),
+            // (min-resolution: 190dpi) {
+            //     background: linear-gradient(to right bottom, $snd-orange-light, $snd-orange-heavy),
+            //     url('../img/nat-5.jpg') no-repeat center center/ cover;
+            // }
         }
 
         &--2 {
             background: linear-gradient(to right bottom, $primary-light, $primary-dark),
             url('../img/nat-6-small.jpg') no-repeat center center/ cover;
 
-            @media (min-width: 1500px) {
-                background: linear-gradient(to right bottom, $primary-light, $primary-dark),
-                url('../img/nat-6.jpg') no-repeat center center/ cover;
-            }
+            // @media (min-width: 900px),
+            // (min-resolution: 190dpi) {
+            //     background: linear-gradient(to right bottom, $primary-light, $primary-dark),
+            //     url('../img/nat-6.jpg') no-repeat center center/ cover;
+            // }
         }
 
         &--3 {
             background: linear-gradient(to right bottom, $snd-blue-light, $snd-blue-heavy),
             url('../img/nat-7-small.jpg') no-repeat center center/ cover;
 
-            @media (min-width: 1500px) {
-                background: linear-gradient(to right bottom, $snd-blue-light, $snd-blue-heavy),
-                url('../img/nat-7.jpg') no-repeat center center/ cover;
-            }
+            // @media (min-width: 900px),
+            // (min-resolution: 190dpi) {
+            //     background: linear-gradient(to right bottom, $snd-blue-light, $snd-blue-heavy),
+            //     url('../img/nat-7.jpg') no-repeat center center/ cover;
+            // }
         }
     }
 

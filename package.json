@@ -6,7 +6,8 @@
   "scripts": {
     "watch:sass": "node-sass ./sass/main.scss ./dist/css/style.css -w",
     "compile:sass": "node-sass ./sass/main.scss ./dist/css/style.comp.css",
-    "concat:css": "concat -o ./dist/css/style.concat.css ./dist/css/icon-font.css ./dist/css/style.comp.css"
+    "concat:css": "concat -o ./dist/css/style.concat.css ./dist/css/icon-font.css ./dist/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./dist/css/style.concat.css -o ./dist/css/style.prefix.css"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,9 @@
   },
   "homepage": "https://github.com/Oussama-Moussaoui/Natours-Project#readme",
   "devDependencies": {
+    "autoprefixer": "^10.2.5",
     "concat": "^1.0.3",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "postcss-cli": "^8.3.1"
   }
 }

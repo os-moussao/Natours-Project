@@ -4,7 +4,9 @@
   "description": "Landing page for natours",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass ./sass/main.scss ./dist/css/style.css -w"
+    "watch:sass": "node-sass ./sass/main.scss ./dist/css/style.css -w",
+    "compile:sass": "node-sass ./sass/main.scss ./dist/css/style.comp.css",
+    "concat:css": "concat -o ./dist/css/style.concat.css ./dist/css/icon-font.css ./dist/css/style.comp.css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/Oussama-Moussaoui/Natours-Project#readme",
   "devDependencies": {
+    "concat": "^1.0.3",
     "node-sass": "^5.0.0"
   }
 }
